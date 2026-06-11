@@ -48,7 +48,7 @@ export default function Home() {
             
             {/* Absolute positioned Account manager */}
             <div className="absolute top-6 right-6 z-50">
-                <UserButton afterSignOutUrl="/" />
+                <UserButton />
             </div>
 
             {!profile.isOnboarded ? (

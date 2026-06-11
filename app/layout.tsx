@@ -16,9 +16,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Use 'as any' to force TypeScript to accept the Clerk pre-built dark theme object
   const clerkAppearance = {
     baseTheme: dark,
-  };
+  } as any;
 
   return (
     <ClerkProvider appearance={clerkAppearance}>
